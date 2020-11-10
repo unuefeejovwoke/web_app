@@ -5,7 +5,7 @@ fonts
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 /*-----
-global style
+global style 
 -------*/
 /*--define custom css variable */
 :root{
@@ -246,6 +246,9 @@ img{
 	font-weight: 600;
 	color: var(--skin-color);
 }
+.section.hide{
+	display: none;
+}
 /*------
 header
 ------*/
@@ -320,6 +323,35 @@ nav menu
 	opacity: 0;
 	visibility: hidden;
 	overflow-y: auto;
+}
+.fade-out-effect{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--bg-black-50);
+	z-index: -1;
+	visibility: hidden;
+}
+.fade-out-effect.active{
+	visibility: visible;
+	z-index: 1000;
+	animation: fadeOut 0.3s ease-out;
+}
+@keyframes fadeOut{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.nav-menu.open{
+	visibility: visible;
+	opacity: 1;
+	z-index: 999;
+	transition: all 0.3s ease-in;
 }
 .nav-menu .close-nav-menu{
 	height: 40px;
