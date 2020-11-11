@@ -9,6 +9,13 @@
   <!-- main css -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+  <!--style switcher--->
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="css/skins/color-1.css">
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="css/skins/color-2.css" disabled>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-3" href="css/skins/color-3.css" disabled>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-4" href="css/skins/color-4.css" disabled>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="css/skins/color-5.css" disabled>
+  <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
 </head>
 <body>
 	<!-- header start-->
@@ -108,7 +115,7 @@
 				<div class="about-info">
 					<p><span>Hi! My name is The Lazyprogrammer.</span> I'm a Web Developer and Python Developer for Data Science, very passionate and dedicated to my works in a lazy way. With knowledge from GADS(Google African Developers Scholarship) and experience from Bitdegree.org as a tutor, I have acquired the skills necessary to make your project a success.</p>        <p> As a graphics designer also I enjoy every steps of designing process, from discussion and collaboration.</p>
 					<a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
-					<a href="#" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+					<a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
 				</div>
 			</div>
 			<!---about tabs start-->
@@ -787,25 +794,10 @@
 		<div class="pp-details">
 			<div class="pp-details-inner">
 				<div class="pp-title">
-					<h2>Personal Portfolio</h2>
-					<p>Category - <span class="pp-project-category">Web Application</span></p>
+					<h2></h2>
+					<p>Category - <span class="pp-project-category"></span></p>
 				</div>
 				<div class="pp-project-details">
-					<div class="row">
-						<div class="description">
-							<h3>Project Brief:</h3>
-							<p>Porfolio web app for mobile app developer showing previous and current projects</p>
-						</div>
-						<div class="info">
-							<h3>Project Info</h3>
-							<ul>
-								<li>Date - <span>2020</span></li>
-								<li>Client - <span>Jerome</span></li>
-								<li>Tools - <span>html, css, javascript</span></li>
-								<li>Web - <span><a href="#">www.jerome.com</a></span></li>
-							</ul>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -817,7 +809,7 @@
 				<div class="pp-project-details-btn outer-shadow hover-in-shadow">Project Details <i class="fas fa-plus"></i></div>
 				<div class="pp-close outer-shadow hover-in-shadow">&times;</div>
 				<img src="img/portfolio/large/project-1/1.png" alt="img" class="pp-img outer-shadow">
-				<div class="pp-counter">1 of 6</div>
+				<div class="pp-counter"></div>
 			</div>
 			<div class="pp-loader">
 				<div></div>
@@ -830,6 +822,26 @@
 	</div>
 
 	<!--portfolio popup end-->
+	<!---style switcher start for demo only-->
+	<div class="style-switcher outer-shadow">
+		<div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+			<i class="fas fa-cog fa-spin"></i>
+		</div>
+		<div class="day-night s-icon outer-shadow hover-in-shadow">
+			<i class="fas"></i>
+		</div>
+
+		<h4>Theme Colors</h4>
+		<div class="colors">
+			<span class="color-1" onclick="setActiveStyle('color-1')"></span>
+			<span class="color-2" onclick="setActiveStyle('color-2')"></span>
+			<span class="color-3" onclick="setActiveStyle('color-3')"></span>
+			<span class="color-4" onclick="setActiveStyle('color-4')"></span>
+			<span class="color-5" onclick="setActiveStyle('color-5')"></span>	
+		</div>
+	</div>
+	<!---style switcher end-->
+
 
 
 
