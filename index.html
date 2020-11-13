@@ -766,22 +766,22 @@
 			</div>
 			<div class="row">
 				<div class="contact-form">
-					<form>
+					<form action="https://formspree.io/f/xvovqzwq" method="POST" id="my-form">
 						<div class="row">
 							<div class="w-50">
 								<div class="input-group outer-shadow hover-in-shadow">
-									<input type="text" placeholder="Name" class="input-control">
+									<input type="text" name="name" placeholder="Name" class="input-control">
 								</div>
 								<div class="input-group outer-shadow hover-in-shadow">
-									<input type="text" placeholder="Email" class="input-control">
+									<input type="text" placeholder="Email" name="email" class="input-control">
 								</div>
 								<div class="input-group outer-shadow hover-in-shadow">
-									<input type="text" placeholder="Subject" class="input-control">
+									<input type="text" placeholder="Subject" name="subject" class="input-control">
 								</div>
 							</div>
 							<div class="w-50">
 								<div class="input-group outer-shadow hover-in-shadow">
-									<textarea class="input-control" placeholder="Message"></textarea>
+									<textarea class="input-control" name="message" placeholder="Message"></textarea>
 								</div>
 							</div>
 							
@@ -794,6 +794,7 @@
 					</form>
 					
 				</div>
+				<div id="status" class="error">Succes</div>
 				
 			</div>
 		</div>
